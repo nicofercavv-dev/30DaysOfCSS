@@ -6,25 +6,26 @@ body {
     align-items: center;
 }
 
-.loading {
-    height: 100px;
-    width: 100px;
-    border: 3px solid whitesmoke;
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid whitesmoke;
-    border-bottom: 5px solid whitesmoke;
-    border-right: 2px solid whitesmoke;
-    border-top: 7px solid whitesmoke;
+}
+
+.loading {
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 5px 0 whitesmoke;
     border-radius: 50%;
-    animation: spin 10s infinite;
+    animation: spin 1s linear infinite;
+    position: absolute;
 }
 
 p {
     margin: 0;
     padding: 0;
     color: whitesmoke;
+    font-size: 20px;
 }
 
 @keyframes spin {
