@@ -1,4 +1,37 @@
 body {
     background-color: #E67BAB;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.loading {
+    height: 100px;
+    width: 100px;
+    border: 3px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    border-top: 7px solid whitesmoke;
+    border-radius: 50%;
+    animation: spin 10s infinite;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
